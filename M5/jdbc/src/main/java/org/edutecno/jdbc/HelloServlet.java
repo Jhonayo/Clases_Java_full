@@ -1,4 +1,4 @@
-package org.edutecno.servertomcat;
+package org.edutecno.jdbc;
 
 import java.io.*;
 
@@ -10,7 +10,7 @@ public class HelloServlet extends HttpServlet {
     private String message;
 
     public void init() {
-        message = "Hello Este es el metodo con intento renombrado link!";
+        message = "Hello World!";
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {

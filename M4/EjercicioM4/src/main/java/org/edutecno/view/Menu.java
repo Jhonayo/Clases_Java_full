@@ -20,7 +20,7 @@ public class Menu {
     opcionMenu.add("Salir");
 
     Menu menu = new Menu();
-    menu.seleccionMenu(opcionMenu);
+   menu.seleccionMenu(opcionMenu);
   }
 
   protected int construirMenu(List<String> listaOpcionesMenu) {
@@ -42,14 +42,14 @@ public class Menu {
     return opcion;
   }
 
-  public void seleccionMenu(List<String> listaOpcionesMenu) {
+ public void seleccionMenu(List<String> listaOpcionesMenu) {
     boolean continuar = false;
     int resultado;
 
     do {
       resultado = construirMenu(listaOpcionesMenu);
       switch (resultado) {
-        case 1:
+        case 1: 
           listarCliente();
           break;
         case 2:
@@ -65,7 +65,7 @@ public class Menu {
   }
 
   public void listarCliente() {
-    clienteServicio.listarClientes();
+    clienteServicio.getListaClientes();
   }
 
   public void agregarCliente() {
@@ -104,7 +104,6 @@ public class Menu {
         }
       }
     }
-
   }
 
   private void actualizarEstadoCliente(Cliente cliente) {
